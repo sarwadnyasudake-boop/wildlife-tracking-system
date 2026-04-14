@@ -27,5 +27,8 @@ This data is sent via GSM module as an SMS to a registered mobile number.
 - Geo-fencing alerts
 - AI-based animal behavior prediction
 
+## 📷 Project Image
+![Project](setup.jpg)
+
 ## 👨‍💻 Author
 Sarvadnya Sudake
