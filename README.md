@@ -8,7 +8,6 @@ To provide a low-cost and efficient solution for tracking animals in real-time.
 
 ## ⚙️ Components Used
 - Arduino Uno
-- GPS Module (NEO-6M)
 - GSM Module (SIM800L)
 - Power Supply
 - Antenna
@@ -29,4 +28,4 @@ This data is sent via GSM module as an SMS to a registered mobile number.
 - AI-based animal behavior prediction
 
 ## 👨‍💻 Author
-Atharv Kardel
+Sarvadnya Sudake
