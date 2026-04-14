@@ -28,7 +28,7 @@ This data is sent via GSM module as an SMS to a registered mobile number.
 - AI-based animal behavior prediction
 
 ## 📷 Project Image
-![Project](wildlifehardwaresetup.jpg)
+![Project](./wildlifehardwaresetup.jpg)
 
 ## 👨‍💻 Author
 Sarvadnya Sudake
