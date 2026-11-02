@@ -1,108 +1,161 @@
-<p align="center">
-  <img src="./wildlife-banner.png" width="100%" alt="Wildlife Tracking and Safety System">
-</p>
-
-# 🐾 Wildlife Tracking & Safety System
+# 🐾 WILDLIFE TRACKING & SAFETY SYSTEM
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Domain-Embedded%20Systems-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Technology-IoT-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Wildlife%20Safety-orange?style=for-the-badge" />
+  <strong>TECHNOLOGY • NATURE • PROTECTION</strong>
 </p>
 
 <p align="center">
-  **An IoT-based approach to wildlife monitoring, location tracking, and animal safety.**
+  <a href="#"><img src="https://img.shields.io/badge/PROJECT-WILDLIFE%20SAFETY-2E8B57?style=for-the-badge" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/DOMAIN-IoT-00A86B?style=for-the-badge" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/PLATFORM-ARDUINO-00979D?style=for-the-badge&logo=arduino&logoColor=white" /></a>
+</p>
+
+<p align="center">
+  *Smart monitoring for a safer coexistence between humans and wildlife.*
 </p>
 
 ---
 
-## 📌 About the Project
+## 01 / PROJECT OVERVIEW
 
-The **Wildlife Tracking & Safety System** is an embedded-system project designed to support wildlife monitoring and conservation. It aims to help researchers and forest departments monitor animal locations and receive important alerts through GSM communication.
+> **The Challenge:** Monitoring wildlife movement over large forest areas is difficult. Timely location information can help researchers and forest departments improve animal monitoring and conservation efforts.
 
-The system combines GPS technology for location information with GSM technology to transmit location details to a registered mobile number.
+The **Wildlife Tracking & Safety System** is an embedded IoT project that combines GPS positioning and GSM communication to obtain animal location information and transmit it to a registered mobile number.
 
-## 🎯 Objectives
+| Project Information | Details |
+|:---|:---|
+| Project Type | Embedded System / IoT |
+| Main Controller | Arduino Uno |
+| Communication | GSM |
+| Positioning | GPS |
+| Application | Wildlife Monitoring |
+| Programming | Embedded C / Arduino |
 
-- Develop an affordable wildlife monitoring solution.
-- Obtain animal location information using GPS.
-- Send location updates through GSM communication.
-- Support wildlife conservation and monitoring activities.
-- Explore technology-based solutions for reducing human–wildlife conflict.
+## 02 / SYSTEM ARCHITECTURE
 
-## 🛠️ Hardware Components
+### How the system works
 
-| Component | Purpose |
-|---|---|
-| Arduino Uno | Main controller |
-| GPS Module | Obtains latitude and longitude |
-| GSM Module (SIM800L) | Sends SMS notifications |
-| Power Supply | Provides operating power |
-| GSM/GPS Antennas | Support wireless communication |
+```mermaid
+flowchart LR
+    A["🛰️ GPS Module"] --> B["Arduino Uno"]
+    B --> C["GSM Module"]
+    C --> D["📱 Registered Mobile"]
+    D --> E["📍 Location Information"]
 
-## ⚙️ Working Principle
+    style A fill:#163D2A,color:#FFFFFF,stroke:#42D392
+    style B fill:#163D2A,color:#FFFFFF,stroke:#42D392
+    style C fill:#163D2A,color:#FFFFFF,stroke:#42D392
+    style D fill:#163D2A,color:#FFFFFF,stroke:#42D392
+    style E fill:#163D2A,color:#FFFFFF,stroke:#42D392
+```
 
-1. **Location Acquisition:** The GPS module receives satellite signals and obtains geographical coordinates.
-2. **Data Processing:** Arduino reads and processes the location information.
-3. **Wireless Communication:** The GSM module transmits the coordinates through SMS.
-4. **Location Access:** The recipient can use the received coordinates to view the animal's location on a map.
+### Operational sequence
 
-## ✨ Key Features
+| Stage | Operation |
+|:---:|:---|
+| 01 | GPS receives satellite signals |
+| 02 | Coordinates are obtained |
+| 03 | Arduino processes location data |
+| 04 | GSM transmits coordinates through SMS |
+| 05 | Receiver accesses the location information |
 
-- 📍 GPS-based location monitoring
-- 📩 SMS-based location updates
-- 📡 GSM wireless communication
-- 🔋 Portable hardware-based design
-- 🌳 Wildlife monitoring and conservation support
-- 💡 Scope for future smart monitoring features
+## 03 / HARDWARE COMPONENTS
 
-## 📷 Project Hardware Setup
+| Component | Function |
+|:---|:---|
+| Arduino Uno | Main processing unit |
+| GPS Module | Latitude and longitude acquisition |
+| SIM800L GSM | SMS communication |
+| Antenna | Wireless signal reception/transmission |
+| Power Supply | Provides electrical power |
+
+## 04 / CORE CAPABILITIES
+
+<details>
+<summary><strong>📍 GPS-Based Location Monitoring</strong></summary>
+
+Obtains geographical coordinates using GPS satellite signals to determine the monitored animal's location.
+</details>
+
+<details>
+<summary><strong>📡 GSM Communication</strong></summary>
+
+Uses the GSM network to transmit location information to a registered mobile number.
+</details>
+
+<details>
+<summary><strong>📩 SMS Notifications</strong></summary>
+
+Provides a simple communication method for sharing location information without requiring a dedicated mobile application.
+</details>
+
+<details>
+<summary><strong>🌳 Wildlife Conservation Support</strong></summary>
+
+Explores an affordable technology-based approach to wildlife monitoring and conservation.
+</details>
+
+## 05 / TECHNOLOGY STACK
 
 <p align="center">
-  <img src="./wildlifehardwaresetup.jpg" alt="Wildlife Tracking System Hardware Setup" width="75%" />
+  <strong>HARDWARE</strong><br/>
+  Arduino Uno &nbsp; • &nbsp; GPS &nbsp; • &nbsp; GSM SIM800L
 </p>
 
 <p align="center">
-  <i>Hardware prototype of the Wildlife Tracking System.</i>
+  <strong>SOFTWARE</strong><br/>
+  Arduino IDE &nbsp; • &nbsp; Embedded C
 </p>
 
-## 🔮 Future Enhancements
-
-- 📱 Mobile application for live monitoring
-- 🗺️ Google Maps location integration
-- 🚧 Geo-fencing and boundary-crossing alerts
-- 🔋 Improved battery management
-- 🤖 AI-based animal behaviour analysis
-- ☁️ Cloud-based wildlife monitoring dashboard
-
-## 🧰 Technologies Used
-
-<p>
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-  <img src="https://img.shields.io/badge/IoT-0A84FF?style=flat-square" />
-  <img src="https://img.shields.io/badge/GPS-4285F4?style=flat-square" />
-  <img src="https://img.shields.io/badge/GSM-2E8B57?style=flat-square" />
+<p align="center">
+  <strong>COMMUNICATION</strong><br/>
+  GPS Positioning &nbsp; • &nbsp; GSM Network &nbsp; • &nbsp; SMS
 </p>
 
-## 👨‍💻 Author
+## 06 / FUTURE DEVELOPMENT
 
-**Sarvadnya Sudake**
+| Enhancement | Planned Capability |
+|:---|:---|
+| 🗺️ Google Maps | Direct location visualization |
+| 📱 Mobile App | Convenient monitoring interface |
+| 🚧 Geo-fencing | Boundary-crossing notifications |
+| ☁️ Cloud Dashboard | Centralized monitoring |
+| 🤖 AI Integration | Animal behaviour analysis |
+| 🔋 Power Optimization | Longer operating duration |
 
-Electronics & Computer Engineering Student  
-Interested in Embedded Systems, IoT, Digital Electronics, and Hardware Development.
+## 07 / PROJECT VISION
 
-<p>
+```text
+        MONITOR
+           ↓
+        LOCATE
+           ↓
+        COMMUNICATE
+           ↓
+        PROTECT
+```
+
+Our goal is to explore how embedded systems and IoT can contribute to wildlife conservation and safer human–wildlife coexistence.
+
+---
+
+## 08 / DEVELOPER
+
+**SARVADNYA SUDAKE**
+
+Electronics & Computer Engineering  
+Embedded Systems | IoT | Digital Electronics
+
+<p align="center">
   <a href="https://github.com/sarwadnyasudake-boop">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github" />
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   <a href="https://www.linkedin.com/in/sarvadnya-sudake-717769358/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
 </p>
 
----
-
 <p align="center">
-  **Building technology for a safer coexistence between humans and wildlife.** 🌿
+  <strong>━━━━━━━━━━━━━━━━━━━━━━━━━━━━</strong><br/>
+  🌿 <em>Building technology to protect the natural world.</em> 🌿
 </p>
