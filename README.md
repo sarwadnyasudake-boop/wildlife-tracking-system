@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./wildlife-banner.png" width="100%" alt="Wildlife Tracking and Safety System">
+</p>
+
 # 🐾 Wildlife Tracking & Safety System
 
 <p align="center">
